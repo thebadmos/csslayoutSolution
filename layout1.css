@@ -1,0 +1,29 @@
+body{
+    width: 95%;
+    margin: 0 auto;
+}
+div{
+    border: 3px solid black;
+}
+.col{
+    height: 400px;
+    width:31%;
+    margin-left:2.0%;
+    display: inline-block;
+}
+.heading {
+    background: purple;
+    width: 99%;
+    height: 200px;
+    margin-bottom: 30px;
+}
+.col-left {
+    background-color: rgb(224,102,102);
+    margin-left: 0;
+}
+.col-mid {
+    background-color: lightgreen;
+}
+.col-right {
+    background-color: orange;
+}
