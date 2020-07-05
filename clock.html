@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       #clockFrame{
+    position: relative;
+    width: 300px;
+    border: 2px solid black;
+    height: 300px;
+    left: 30%;
+    top: 100px;
+    border-radius: 50%;
+}
+
+#longArm{
+    position: relative;
+    width: 140px;
+    border: 2px solid rgb(14, 20, 16);
+    left: 49%;
+    top: 150px;
+    transform-origin: 0% 100%;
+    animation: rotate 3600s infinite steps(60);
+}
+
+#shortArm{
+    position: relative;
+    width: 100px;
+    border: 2px solid rgb(46, 23, 107);
+    left: 49%;
+    top: 146px;
+    transform-origin: 0% 100%;
+    animation: rotate 43200s infinite linear;
+}
+
+#seconds{
+    position: relative;
+    width: 165px;
+    border: 1px solid red;
+    left: 40%;
+    top: 143px;
+    transform-origin: 15% 80%;
+    animation: rotate 60s infinite steps(60);
+}
+
+#mid_dot{
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: black;
+    border: 1px solid black;
+    left: 40.5%;
+    top: 252px;
+    z-index: 10;
+}
+
+@keyframes rotate{
+    100%{
+        transform: rotateZ(360deg);
+    }
+}
+      </style>
+</head>
+<body>
+  <div id="mid_dot"></div>
+  <div id="clockFrame">
+      <div id="longArm"></div>
+      <div id="shortArm"></div>
+      <div id="seconds"></div>
+  </div>
+</body>
+</html>
